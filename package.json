@@ -1,0 +1,14 @@
+{
+  "name": "cv-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "pnpm run test:client && pnpm run test:server",
+    "test:client": "pnpm run --prefix client test",
+    "test:server": "pnpm run --prefix server test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
