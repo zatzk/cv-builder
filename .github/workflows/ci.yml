@@ -19,8 +19,10 @@ jobs:
           node-version-file: "server/.nvmrc"
           cache: "pnpm"
 
-      - name: Install pnpm
-        run: npm install -g pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10.x
 
       - name: Install dependencies
         working-directory: ./server
