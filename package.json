@@ -1,12 +1,25 @@
 {
   "name": "cv-builder",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "pnpm run test:client && pnpm run test:server",
-    "test:client": "pnpm run --prefix client test",
-    "test:server": "pnpm run --prefix server test"
+    "test": "pnpm test:client && pnpm test:server",
+    "test:client": "pnpm --prefix client test",
+    "test:server": "pnpm --prefix server test",
+    "test:run:server": "pnpm --prefix server test:run",
+    "test:ui:server": "pnpm --prefix server test:ui",
+    "coverage:server": "pnpm --prefix server coverage",
+
+    "dev:server": "pnpm --prefix server dev",
+    "start:server": "pnpm --prefix server start",
+    "build:server": "pnpm --prefix server build",
+
+    "type-check:server": "pnpm --prefix server type-check",
+    "lint:server": "pnpm --prefix server lint",
+    "lint:fix:server": "pnpm --prefix server lint:fix",
+    "format:server": "pnpm --prefix server format",
+    "format:check:server": "pnpm --prefix server format:check",
+
+    "prepare:server": "pnpm --prefix server prepare"
   },
   "keywords": [],
   "author": "",
