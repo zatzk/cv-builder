@@ -4,7 +4,7 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "dev": "tsx --watch --env-file .env src/index.ts",
+    "dev": "tsx --watch --env-file .env src/index.js",
     "start": "node --env-file .env dist/index.js",
     "build": "tsc",
     "type-check": "tsc --noEmit",
@@ -23,7 +23,7 @@
       "eslint",
       "prettier --check"
     ],
-    "*.{.json,yml,yaml,md}":[
+    "*.{.json,yml,yaml,md}": [
       "prettier --check"
     ]
   },
@@ -34,7 +34,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
+    "morgan": "^1.10.0",
     "pdfkit": "^0.16.0"
   },
   "devDependencies": {

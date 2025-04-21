@@ -4,6 +4,8 @@
   "scripts": {
     "test": "pnpm test:client && pnpm test:server",
     "test:client": "pnpm --prefix client test",
+
+    
     "test:server": "pnpm --prefix server test",
     "test:run:server": "pnpm --prefix server test:run",
     "test:ui:server": "pnpm --prefix server test:ui",
